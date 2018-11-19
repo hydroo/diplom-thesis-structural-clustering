@@ -1,0 +1,17 @@
+\begin{tikzpicture}[]
+
+\node [draw, ellipse, align=center] (1) {
+	min \\
+	processes (63) : 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, \ldots \\
+	function pairs (663) : 41 $\rightarrow$ 2, 743 $\rightarrow$ 729, \ldots
+};
+
+\node [draw, ellipse, align=center, below of=1, anchor=north, yshift=-1.0cm] (2) {
+	max \\
+	processes (1) : 1 \\
+	function pairs (111) : 318 $\rightarrow$ 27, 495 $\rightarrow$ 47, \ldots
+};
+
+\path [draw, -latex'] (1)  edge (2);
+
+\end{tikzpicture}

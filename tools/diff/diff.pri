@@ -1,0 +1,1 @@
+SOURCES += ../diff/diff.cpp

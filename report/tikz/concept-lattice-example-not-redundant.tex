@@ -1,0 +1,14 @@
+\begin{tikzpicture}[]
+
+\node [draw     , circle , text=white                ] (0)   {$\{P_9\}$};
+\node [draw=none,        , below of=0 , yshift=-0.2cm] (x)   {};
+\node [draw     , ellipse, left  of=x , anchor=east  ] (a)   {$\{P_1\}, \{A\}$};
+\node [draw     , ellipse, right of=x , anchor=west  ] (bc)  {$\{P_2, P_4\}, \{B, C\}$};
+\node [draw     , circle , below of=x , yshift=-0.2cm] (abc) {$\{P_3\}$};
+
+\path [draw, -latex'] (0)  edge (a);
+\path [draw, -latex'] (0)  edge (bc);
+\path [draw, -latex'] (a)  edge (abc);
+\path [draw, -latex'] (bc) edge (abc);
+
+\end{tikzpicture}

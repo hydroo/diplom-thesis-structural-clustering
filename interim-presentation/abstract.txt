@@ -1,0 +1,11 @@
+Diplom Informatik
+Thema: Automatic Profile-Based Characterization of Performance Traces for Highly Parallel Applications
+Betreuer: Matthias Weber, Holger Brunst
+
+
+Zwischenpraesentation
+
+Abstract
+
+Performance optimisation, especially in the field of HPC, is an integral part of today's software development process. One powerful way of optimising applications is to analyse their event traces. Finding performance problems in the large amount of trace data can be challenging. Load imbalance problems or the impact of optimisations might not be immediately obvious. Automatic performance analysis still has limited application, due to numerous and diverse possibilities of performance issues in computer programs.
+Methods to automatically compare traces are required to improve both the user experience of viewing traces and automatic trace analysis. The first step before comparing processes' traces in depth is to assign them to groups, so that only processes that perform similar tasks are compared in greater detail. Straightforward application of known clustering algorithms requires an all-to-all comparison of processes, which is not feasible for process counts beyond tens of thousands. This work introduces a method to cluster processes based on call relations in less than O(n^2) on average. Additionally, this talk presents the first ideas on a novel, scalable viewer for profile data.

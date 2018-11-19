@@ -1,0 +1,26 @@
+\begin{tikzpicture}[]
+
+\node [draw     , rectangle, right of=m1, xshift=0.5cm  ] (p1) {\texttt{process 1}};
+\node [draw     , ellipse  , below of=p1, yshift=-0.2cm ] (11) {\texttt{main}};
+\node [draw     , ellipse  , below of=11, yshift=-0.2cm ] (31) {\texttt{MPI\_Init}};
+\node [draw=none           , below of=31, yshift=-0.2cm ] (51) {};
+\node [draw     , ellipse  , left  of=51                ] (61) {\texttt{fopen}};
+\node [draw     , ellipse  , right of=51                ] (71) {\texttt{fclose}};
+
+\path [draw, -latex'] (p1) edge (11);
+
+\path [draw, -latex'] (11) [out=200, in=135] edge (61);
+\path [draw, -latex'] (11) [out=-20, in=45 ] edge (71);
+
+\path [draw, -latex'] (11) edge (31);
+\path [draw, -latex'] (31) edge (61);
+\path [draw, -latex'] (31) edge (71);
+
+
+\node [draw, rectangle, right of=p1, xshift=2cm   ] (p2) {\texttt{process 2}};
+\node [draw, ellipse  , below of=p2, yshift=-0.2cm] (12) {\texttt{main}};
+
+\path [draw, -latex'] (p2) edge (12);
+\path [draw, -latex'] (12) edge (31);
+
+\end{tikzpicture}

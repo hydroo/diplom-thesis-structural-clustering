@@ -1,0 +1,13 @@
+\begin{tikzpicture}[]
+
+\node [draw=none, circle,                          ] (a) {\rotatebox{90}{...}};
+\node [draw     , circle, below of=a, yshift=-0.2cm] (3) {3};
+\node [draw     , circle, below of=3, yshift=-0.2cm] (2) {2};
+\node [draw     , circle, below of=2, yshift=-0.2cm] (1) {1};
+
+\path [draw, -latex'] (a) edge (3);
+\path [draw, -latex'] (3) edge (2);
+\path [draw, -latex'] (2) edge (1);
+
+\end{tikzpicture}
+

@@ -1,0 +1,35 @@
+\begin{tikzpicture}[]
+
+\node [draw     , rectangle, text width = 5cm                ] (m) {$A$};
+\node [draw=none, text=white, below=-\pgflinewidth of m      ] (x) {$A$};
+\node [draw     , rectangle, text width=1cm, left=0.5cm of x ] (a) {$B$};
+\node [draw     , rectangle, text width=1cm, right=0.5cm of x] (b) {$C$};
+
+\node [draw=none, rectangle, xshift= \pgflinewidth/2, yshift=0.8cm+\pgflinewidth] at (m.south west) (1) {};
+\node [draw=none, rectangle, xshift= \pgflinewidth/2, yshift=0.8cm]               at (a.north west) (2) {};
+\node [draw=none, rectangle, xshift=-\pgflinewidth/2, yshift=0.8cm]               at (a.north east) (3) {};
+\node [draw=none, rectangle, xshift= \pgflinewidth/2, yshift=0.8cm]               at (b.north west) (4) {};
+\node [draw=none, rectangle, xshift=-\pgflinewidth/2, yshift=0.8cm]               at (b.north east) (5) {};
+\node [draw=none, rectangle, xshift=-\pgflinewidth/2, yshift=0.8cm+\pgflinewidth] at (m.south east) (6) {};
+
+\node [draw=none, rectangle, yshift=0.45cm] at (1) (7) {};
+\node [draw=none, rectangle, yshift=0.45cm] at (6) (8) {};
+
+\path [draw] (1.center) edge (2.center);
+	\path [draw] (1.north) edge (1.south);
+	\path [draw] (2.north) edge (2.south);
+\path [draw] (3.center) edge (4.center);
+	\path [draw] (3.north) edge (3.south);
+	\path [draw] (4.north) edge (4.south);
+\path [draw] (5.center) edge (6.center);
+	\path [draw] (5.north) edge (5.south);
+	\path [draw] (6.north) edge (6.south);
+\path [draw] (7.center) edge (8.center);
+	\path [draw] (7.north) edge (7.south);
+	\path [draw] (8.north) edge (8.south);
+
+\node [draw=none, left=0cm of 7, anchor=east] () {inclusive};
+\node [draw=none, left=0cm of 1, anchor=east] () {exclusive};
+
+\end{tikzpicture}
+

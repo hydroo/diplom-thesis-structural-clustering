@@ -1,0 +1,82 @@
+\begin{tikzpicture}[]
+
+\def \xw{11.5cm}
+% \def \xw{10.5cm} % defense slides
+\def \xh{6cm}
+% \def \xh{3.5cm} % defense slides
+
+\def \xxmax{11.5}
+\def \xymax{6.3}
+
+\newcommand{\xx}[1]{#1 / \xxmax * \xw}
+\newcommand{\xy}[1]{#1 / \xymax * \xh}
+
+\foreach \x in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} {
+	\draw [lightgray2, thin] (\xx{\x}, 0pt) -- (\xx{\x}, \xy{\xymax}); % x help line
+	\draw (\xx{\x}, 0pt) -- (\xx{\x}, -3pt) node[anchor=north] {\rotatebox{45}{\pgfmathparse{2^(\x+1)}\pgfmathprintnumber{\pgfmathresult}}}; % x label
+	% \foreach \xa in {0.125, 0.25, 0.5} { % small log lines
+	% 	\pgfmathsetmacro{\xb}{\x - \xa}%
+	% 	\draw (\xx{\xb}, 0pt) -- (\xx{\xb}, -2pt);
+	% }
+}
+
+\foreach \y in {1, 2, 3, 4, 5, 6} {
+	\draw[lightgray2, thin] (0pt, \xy{\y}) -- (\xx{\xxmax}, \xy{\y}); % y help line
+	\draw (0pt, \xy{\y}) -- (-3pt, \xy{\y}) node[anchor=east] {\y}; % y label
+}
+
+\draw[->] (0,0) -- coordinate (x axis mid) (\xw, 0); % x axis
+\draw[->] (0,0) -- coordinate (y axis mid) (0  , \xh); % y axis
+
+\node[below=1.1cm] at (x axis mid) {Processes};
+\node[left=0.6cm]  at (y axis mid) {\rotatebox{90}{Time (s)}};
+
+	\draw                         (\xx{0.5},\xy{5.5}) -- plot[mark=*]         (\xx{0.5},\xy{5.5}) -- (\xx{0.5},\xy{5.5}) node[right]{Add processes};
+	\draw[yshift=-\baselineskip]  (\xx{0.5},\xy{5.5}) -- plot[mark=square*]   (\xx{0.5},\xy{5.5}) -- (\xx{0.5},\xy{5.5}) node[right]{Finalise concept lattice};
+	\draw[yshift=-2\baselineskip] (\xx{0.5},\xy{5.5}) -- plot[mark=triangle*] (\xx{0.5},\xy{5.5}) -- (\xx{0.5},\xy{5.5}) node[right]{Calculate similarity matrix};
+
+
+\draw plot[only marks, mark=*] coordinates {
+	(\xx{ 1}, \xy{ 0   })
+	(\xx{ 2}, \xy{ 0   })
+	(\xx{ 3}, \xy{ 0.06})
+	(\xx{ 4}, \xy{ 0.63})
+	(\xx{ 5}, \xy{ 1.16})
+	(\xx{ 6}, \xy{ 2.48})
+	(\xx{ 7}, \xy{ 2.82})
+	(\xx{ 8}, \xy{ 2.74})};
+	% (\xx{ 9}, \xy{30.05})
+	% (\xx{10}, \xy{14.95})
+	% (\xx{11}, \xy{30.2 })};
+	
+\draw plot[only marks, mark=square*] coordinates {
+	(\xx{ 1}, \xy{ 0.272})
+	(\xx{ 2}, \xy{ 0.183})
+	(\xx{ 3}, \xy{ 0.224})
+	(\xx{ 4}, \xy{ 1.049})
+	(\xx{ 5}, \xy{ 1.831})
+	(\xx{ 6}, \xy{ 3.816})
+	(\xx{ 7}, \xy{ 4.422})
+	(\xx{ 8}, \xy{ 4.555})};
+	% (\xx{ 9}, \xy{50.609})
+	% (\xx{10}, \xy{24.478})
+	% (\xx{11}, \xy{50.318})};
+	
+\draw plot[only marks, mark=triangle*] coordinates {
+	(\xx{ 1}, \xy{ 0.272})
+	(\xx{ 2}, \xy{ 0.183})
+	(\xx{ 3}, \xy{ 0.228})
+	(\xx{ 4}, \xy{ 1.072})
+	(\xx{ 5}, \xy{ 1.918})
+	(\xx{ 6}, \xy{ 4.151})
+	(\xx{ 7}, \xy{ 5.1  })
+	(\xx{ 8}, \xy{ 5.748})};
+	% (\xx{ 9}, \xy{57.09 })
+	% (\xx{10}, \xy{34.362})
+	% (\xx{11}, \xy{58.92})};
+
+\draw [->] (\xx{ 9}, \xy{5.5}) -- (\xx{ 9}, \xy{6.2});
+\draw [->] (\xx{10}, \xy{5.5}) -- (\xx{10}, \xy{6.2});
+\draw [->] (\xx{11}, \xy{5.5}) -- (\xx{11}, \xy{6.2});
+
+\end{tikzpicture}

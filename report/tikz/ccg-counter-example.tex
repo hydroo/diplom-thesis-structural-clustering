@@ -1,0 +1,23 @@
+\begin{tikzpicture}[]
+
+\node [draw, rectangle                            ] (p1) {\texttt{process 1}};
+\node [draw, ellipse  , below of=p1, yshift=-0.2cm] (a1) {$A$};
+\node [draw, ellipse  , below of=a1, yshift=-0.2cm] (b1) {$B$};
+\node [draw, ellipse  , below of=b1, yshift=-0.2cm] (c1) {$C$};
+\node [draw, ellipse  , below of=c1, yshift=-0.2cm] (d1) {$D$};
+
+\path [draw, -latex'] (p1) edge (a1);
+\path [draw, -latex'] (a1) edge (b1);
+\path [draw, -latex'] (b1) edge (c1);
+\path [draw, -latex'] (c1) edge (d1);
+
+\node [draw, rectangle, right of=p1, xshift=2.0cm ] (p2) {\texttt{process 2}};
+\node [draw, ellipse  , below of=p2, yshift=-0.2cm] (a2) {$A$};
+\node [draw, ellipse  , below of=a2, yshift=-0.2cm] (b2) {$B$};
+\node [draw, ellipse  , below of=b2, yshift=-0.2cm] (c2) {$C$};
+
+\path [draw, -latex'] (p2) edge (a2);
+\path [draw, -latex'] (a2) edge (b2);
+\path [draw, -latex'] (b2) edge (c2);
+
+\end{tikzpicture}

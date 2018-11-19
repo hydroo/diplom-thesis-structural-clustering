@@ -1,0 +1,27 @@
+\begin{tikzpicture}[scale=0.75, every node/.style={scale=0.75}]
+
+\node [draw, ellipse, align=center] (min) {
+	min \\
+	function pairs (109) : 510 $\rightarrow$ 597, \ldots};
+
+\node [draw, ellipse, align=center, below left=0cm of min, xshift=1.5cm, yshift=-1cm] (l) {
+	processes (3) : 2, 3, 4 \\
+	function pairs (216) : 7 $\rightarrow$ 463, \ldots};
+
+\node [draw, ellipse, align=center, below=0.5cm of l] (ll) {
+	processes (1) : 1 \\
+	function pairs (95) : 340 $\rightarrow$ 352, \ldots};
+
+\node [draw, ellipse, align=center, right=0.5cm of l, xshift=-1cm, yshift=-1.2cm] (r) {
+	processes (12) : 65537, 65538, \ldots \\
+	function pairs (33) : 0 $\rightarrow$ 559, \ldots};
+
+\node [draw, ellipse, below right=0.5cm of ll, xshift=0.6cm] (max) {max};
+
+\path [draw, -latex'] (min) edge (l);
+\path [draw, -latex'] (min) edge (r);
+\path [draw, -latex'] (l)   edge (ll);
+\path [draw, -latex'] (ll)  edge (max);
+\path [draw, -latex'] (r)   edge (max);
+
+\end{tikzpicture}

@@ -1,0 +1,807 @@
+DV1.5.0"dolphin"
+DCR"VampirTrace 5.6rc1"
+DCMT"Trace Times:"
+DCMT" Start: Tue Nov 11 13:04:12 2008  (1226405052255523)"
+DCMT" Stop: Tue Nov 11 13:05:37 2008  (1226405137959656)"
+DCMT" Elapsed: 00:01:25 (85704133)"
+DCMT"VampirTrace Environment:"
+DCMT" VT_MODE: TRACE"
+DCMT" VT_BUFFER_SIZE: 200M"
+DCMT" VT_SYNC_FLUSH: no"
+DCMT" VT_SYNC_FLUSH_LEVEL: 80"
+DCMT" VT_MAX_FLUSHES: 1"
+DCMT" VT_METRICS: PAPI_FP_OPS:PAPI_L3_TCM"
+DCMT" VT_RUSAGE: RU_UTIME:RU_STIME"
+DCMT" VT_RUSAGE_INTV: 100"
+DCMT" VT_MPITRACE: yes"
+DCMT" VT_MEMTRACE: no"
+DCMT" VT_IOTRACE: no"
+DCMT" VT_FILTER_SPEC: filter_intel.txt"
+DCMT" VT_GROUPS_SPEC: /work/home0/mlieber/data/wrf/standard/groups_intel.txt"
+DTR1312d00
+DP1NM"Process 0"
+DP10001NM" Thread 1/0"PT1
+DP20001NM" Thread 2/0"PT1
+DP30001NM" Thread 3/0"PT1
+DP2NM"Process 1"
+DP10002NM" Thread 1/1"PT2
+DP20002NM" Thread 2/1"PT2
+DP30002NM" Thread 3/1"PT2
+DP3NM"Process 2"
+DP10003NM" Thread 1/2"PT3
+DP20003NM" Thread 2/2"PT3
+DP30003NM" Thread 3/2"PT3
+DP4NM"Process 3"
+DP10004NM" Thread 1/3"PT4
+DP20004NM" Thread 2/3"PT4
+DP30004NM" Thread 3/3"PT4
+DPG59682f00M1,10001,20001,30001,2,10002,20002,30002,3,10003,20003,30003,4,10004,20004,30004,NM"jupiter"
+DPG3b9aca00M1,2,3,4,NM"MPI_COMM_WORLD"
+DPG3b9aca01M1,NM"MPI_COMM_SELF 0"
+DPG3b9aca02M2,NM"MPI_COMM_SELF 1"
+DPG3b9aca03M3,NM"MPI_COMM_SELF 2"
+DPG3b9aca04M4,NM"MPI_COMM_SELF 3"
+DSF1NM"LIBC"
+DSF2NM"MPI"
+DSF3NM"Pthread"
+DSF4NM"OpenMP"
+DSF5NM"interp_fcn.f"
+DSF6NM"module_pbl_driver.f"
+DSF7NM"module_cumulus_driver.f"
+DSF8NM"module_microphysics_driver.f"
+DSF9NM"module_radiation_driver.f"
+DSFaNM"module_surface_driver.f"
+DSFbNM"solve_em.f"
+DSFcNM"couple_or_uncouple_em.f"
+DS1F5LN4f
+DS2F5LN7d
+DS3F5LN2fe
+DS4F5LN370
+DS5F6LN131
+DS6F6LN158
+DS7F6LN15a
+DS8F6LN198
+DS9F7LN10e
+DSaF7LN163
+DSbF8LNd3
+DScF8LN1cf
+DSdF9LN137
+DSeF9LN1fc
+DSfFaLN15e
+DS10FaLN167
+DS11FaLN179
+DS12FaLN18b
+DS13FaLN18d
+DS14FaLN1b7
+DS15FaLN1ba
+DS16FaLN223
+DS17FaLN22a
+DS18FaLN233
+DS19FbLN4e0
+DS1aFbLN4f5
+DS1bFbLN613
+DS1cFbLN62c
+DS1dFbLN635
+DS1eFbLN646
+DS1fFbLN69b
+DS20FbLN6b3
+DS21FbLN72c
+DS22FbLN73f
+DS23FbLN747
+DS24FbLN755
+DS25FbLN82c
+DS26FbLN83e
+DS27FbLN8eb
+DS28FbLN901
+DS29FbLNa15
+DS2aFbLNa27
+DS2bFbLNc2e
+DS2cFbLNc40
+DS2dFbLNc46
+DS2eFbLNc59
+DS2fFbLNc66
+DS30FbLNc7c
+DS31FbLNc82
+DS32FbLNc9a
+DS33FbLNca2
+DS34FbLNcbe
+DS35FbLNcc2
+DS36FbLNcfc
+DS37FbLNd18
+DS38FbLNd4d
+DS39FbLNe8e
+DS3aFbLNee1
+DS3bFbLNeeb
+DS3cFbLNf1b
+DS3dFbLNf68
+DS3eFbLN1002
+DS3fFbLN10a8
+DS40FbLN10dd
+DS41FbLN10e2
+DS42FbLN1106
+DS43FbLN1164
+DS44FbLN122b
+DS45FbLN122d
+DS46FbLN1255
+DS47FbLN12bd
+DS48FbLN12d7
+DS49FbLN12d9
+DS4aFbLN1302
+DS4bFbLN130d
+DS4cFbLN1327
+DS4dFbLN132a
+DS4eFbLN134d
+DS4fFbLN1355
+DS50FbLN1374
+DS51FbLN15e1
+DS52FbLN161d
+DS53FbLN1924
+DS54FbLN1936
+DS55FbLN194e
+DS56FbLN1966
+DS57FbLN197d
+DS58FbLN19a3
+DS59FbLN19b9
+DS5aFbLN19ce
+DS5bFbLN1e5b
+DS5cFbLN1ea4
+DS5dFcLN48f
+DS5eFcLN4bd
+DS5fFcLN4bf
+DS60FcLN4c8
+DFLG1NM"MPI I/O"
+DFG1NM"Application"
+DFG2NM"VT_API"
+DFG3NM"OMP-PREG"
+DFG4NM"LIBC"
+DFG5NM"MPI"
+DFG6NM"Pthread"
+DFG7NM"WRF"
+DFG8NM"IO"
+DFG9NM"DYN"
+DFGaNM"PHYS"
+DFGbNM"OMP"
+DFGcNM"OMP-SYNC"
+DF1G1NM"user"
+DF2G2NM"sync"
+DF3G2NM"sync time"
+DF4G2NM"flush"
+DF5G2NM"dump statistics"
+DF6G2NM"tracing off"
+DF7G3NM"parallel region"
+DF8G4NM"system"
+DF9G4NM"wait"
+DFaG4NM"waitpid"
+DFbG5NM"MPI_Abort"
+DFcG5NM"MPI_Address"
+DFdG5NM"MPI_Allgather"
+DFeG5NM"MPI_Allgatherv"
+DFfG5NM"MPI_Allreduce"
+DF10G5NM"MPI_Alltoall"
+DF11G5NM"MPI_Alltoallv"
+DF12G5NM"MPI_Attr_delete"
+DF13G5NM"MPI_Attr_get"
+DF14G5NM"MPI_Attr_put"
+DF15G5NM"MPI_Barrier"
+DF16G5NM"MPI_Bcast"
+DF17G5NM"MPI_Bsend"
+DF18G5NM"MPI_Bsend_init"
+DF19G5NM"MPI_Buffer_attach"
+DF1aG5NM"MPI_Buffer_detach"
+DF1bG5NM"MPI_Cancel"
+DF1cG5NM"MPI_Cart_coords"
+DF1dG5NM"MPI_Cart_create"
+DF1eG5NM"MPI_Cart_get"
+DF1fG5NM"MPI_Cart_map"
+DF20G5NM"MPI_Cart_rank"
+DF21G5NM"MPI_Cart_shift"
+DF22G5NM"MPI_Cart_sub"
+DF23G5NM"MPI_Cartdim_get"
+DF24G5NM"MPI_Comm_compare"
+DF25G5NM"MPI_Comm_create"
+DF26G5NM"MPI_Comm_dup"
+DF27G5NM"MPI_Comm_free"
+DF28G5NM"MPI_Comm_group"
+DF29G5NM"MPI_Comm_rank"
+DF2aG5NM"MPI_Comm_remote_group"
+DF2bG5NM"MPI_Comm_remote_size"
+DF2cG5NM"MPI_Comm_size"
+DF2dG5NM"MPI_Comm_split"
+DF2eG5NM"MPI_Comm_test_inter"
+DF2fG5NM"MPI_Dims_create"
+DF30G5NM"MPI_Errhandler_create"
+DF31G5NM"MPI_Errhandler_free"
+DF32G5NM"MPI_Errhandler_get"
+DF33G5NM"MPI_Errhandler_set"
+DF34G5NM"MPI_Error_class"
+DF35G5NM"MPI_Error_string"
+DF36G5NM"MPI_Finalize"
+DF37G5NM"MPI_Gather"
+DF38G5NM"MPI_Gatherv"
+DF39G5NM"MPI_Get_count"
+DF3aG5NM"MPI_Get_elements"
+DF3bG5NM"MPI_Get_processor_name"
+DF3cG5NM"MPI_Get_version"
+DF3dG5NM"MPI_Graph_create"
+DF3eG5NM"MPI_Graph_get"
+DF3fG5NM"MPI_Graph_map"
+DF40G5NM"MPI_Graph_neighbors"
+DF41G5NM"MPI_Graph_neighbors_count"
+DF42G5NM"MPI_Graphdims_get"
+DF43G5NM"MPI_Group_compare"
+DF44G5NM"MPI_Group_difference"
+DF45G5NM"MPI_Group_excl"
+DF46G5NM"MPI_Group_free"
+DF47G5NM"MPI_Group_incl"
+DF48G5NM"MPI_Group_intersection"
+DF49G5NM"MPI_Group_range_excl"
+DF4aG5NM"MPI_Group_range_incl"
+DF4bG5NM"MPI_Group_rank"
+DF4cG5NM"MPI_Group_size"
+DF4dG5NM"MPI_Group_translate_ranks"
+DF4eG5NM"MPI_Group_union"
+DF4fG5NM"MPI_Ibsend"
+DF50G5NM"MPI_Init"
+DF51G5NM"MPI_Initialized"
+DF52G5NM"MPI_Intercomm_create"
+DF53G5NM"MPI_Intercomm_merge"
+DF54G5NM"MPI_Iprobe"
+DF55G5NM"MPI_Irecv"
+DF56G5NM"MPI_Irsend"
+DF57G5NM"MPI_Isend"
+DF58G5NM"MPI_Issend"
+DF59G5NM"MPI_Keyval_create"
+DF5aG5NM"MPI_Keyval_free"
+DF5bG5NM"MPI_Op_create"
+DF5cG5NM"MPI_Op_free"
+DF5dG5NM"MPI_Pack"
+DF5eG5NM"MPI_Pack_size"
+DF5fG5NM"MPI_Pcontrol"
+DF60G5NM"MPI_Probe"
+DF61G5NM"MPI_Recv"
+DF62G5NM"MPI_Recv_init"
+DF63G5NM"MPI_Reduce"
+DF64G5NM"MPI_Reduce_scatter"
+DF65G5NM"MPI_Request_free"
+DF66G5NM"MPI_Rsend"
+DF67G5NM"MPI_Rsend_init"
+DF68G5NM"MPI_Scan"
+DF69G5NM"MPI_Scatter"
+DF6aG5NM"MPI_Scatterv"
+DF6bG5NM"MPI_Send"
+DF6cG5NM"MPI_Send_init"
+DF6dG5NM"MPI_Sendrecv"
+DF6eG5NM"MPI_Sendrecv_replace"
+DF6fG5NM"MPI_Ssend"
+DF70G5NM"MPI_Ssend_init"
+DF71G5NM"MPI_Start"
+DF72G5NM"MPI_Startall"
+DF73G5NM"MPI_Test"
+DF74G5NM"MPI_Test_cancelled"
+DF75G5NM"MPI_Testall"
+DF76G5NM"MPI_Testany"
+DF77G5NM"MPI_Testsome"
+DF78G5NM"MPI_Topo_test"
+DF79G5NM"MPI_Type_commit"
+DF7aG5NM"MPI_Type_contiguous"
+DF7bG5NM"MPI_Type_extent"
+DF7cG5NM"MPI_Type_free"
+DF7dG5NM"MPI_Type_hindexed"
+DF7eG5NM"MPI_Type_hvector"
+DF7fG5NM"MPI_Type_indexed"
+DF80G5NM"MPI_Type_lb"
+DF81G5NM"MPI_Type_size"
+DF82G5NM"MPI_Type_struct"
+DF83G5NM"MPI_Type_ub"
+DF84G5NM"MPI_Type_vector"
+DF85G5NM"MPI_Unpack"
+DF86G5NM"MPI_Wait"
+DF87G5NM"MPI_Waitall"
+DF88G5NM"MPI_Waitany"
+DF89G5NM"MPI_Waitsome"
+DF8aG5NM"MPI_Wtick"
+DF8bG5NM"MPI_Wtime"
+DF8cG5NM"MPI_Accumulate"
+DF8dG5NM"MPI_Get"
+DF8eG5NM"MPI_Put"
+DF8fG5NM"MPI_Win_complete"
+DF90G5NM"MPI_Win_create"
+DF91G5NM"MPI_Win_fence"
+DF92G5NM"MPI_Win_free"
+DF93G5NM"MPI_Win_lock"
+DF94G5NM"MPI_Win_post"
+DF95G5NM"MPI_Win_start"
+DF96G5NM"MPI_Win_test"
+DF97G5NM"MPI_Win_unlock"
+DF98G5NM"MPI_Win_wait"
+DF99G5NM"MPI_File_call_errhandler"
+DF9aG5NM"MPI_File_create_errhandler"
+DF9bG5NM"MPI_File_get_errhandler"
+DF9cG5NM"MPI_File_set_errhandler"
+DF9dG5NM"MPI_File_open"
+DF9eG5NM"MPI_File_close"
+DF9fG5NM"MPI_File_delete"
+DFa0G5NM"MPI_File_set_size"
+DFa1G5NM"MPI_File_preallocate"
+DFa2G5NM"MPI_File_get_size"
+DFa3G5NM"MPI_File_get_group"
+DFa4G5NM"MPI_File_get_amode"
+DFa5G5NM"MPI_File_set_info"
+DFa6G5NM"MPI_File_get_info"
+DFa7G5NM"MPI_File_set_view"
+DFa8G5NM"MPI_File_get_view"
+DFa9G5NM"MPI_File_read_at"
+DFaaG5NM"MPI_File_read_at_all"
+DFabG5NM"MPI_File_write_at"
+DFacG5NM"MPI_File_write_at_all"
+DFadG5NM"MPI_File_iread_at"
+DFaeG5NM"MPI_File_iwrite_at"
+DFafG5NM"MPI_File_read"
+DFb0G5NM"MPI_File_read_all"
+DFb1G5NM"MPI_File_write"
+DFb2G5NM"MPI_File_write_all"
+DFb3G5NM"MPI_File_iread"
+DFb4G5NM"MPI_File_iwrite"
+DFb5G5NM"MPI_File_seek"
+DFb6G5NM"MPI_File_get_position"
+DFb7G5NM"MPI_File_get_byte_offset"
+DFb8G5NM"MPI_File_read_shared"
+DFb9G5NM"MPI_File_write_shared"
+DFbaG5NM"MPI_File_iread_shared"
+DFbbG5NM"MPI_File_iwrite_shared"
+DFbcG5NM"MPI_File_read_ordered"
+DFbdG5NM"MPI_File_write_ordered"
+DFbeG5NM"MPI_File_seek_shared"
+DFbfG5NM"MPI_File_get_position_shared"
+DFc0G5NM"MPI_File_read_at_all_begin"
+DFc1G5NM"MPI_File_read_at_all_end"
+DFc2G5NM"MPI_File_write_at_all_begin"
+DFc3G5NM"MPI_File_write_at_all_end"
+DFc4G5NM"MPI_File_read_all_begin"
+DFc5G5NM"MPI_File_read_all_end"
+DFc6G5NM"MPI_File_write_all_begin"
+DFc7G5NM"MPI_File_write_all_end"
+DFc8G5NM"MPI_File_read_ordered_begin"
+DFc9G5NM"MPI_File_read_ordered_end"
+DFcaG5NM"MPI_File_write_ordered_begin"
+DFcbG5NM"MPI_File_write_ordered_end"
+DFccG5NM"MPI_File_get_type_extent"
+DFcdG5NM"MPI_File_set_atomicity"
+DFceG5NM"MPI_File_get_atomicity"
+DFcfG5NM"MPI_File_sync"
+DFd0G6NM"pthread_create"
+DFd1G6NM"pthread_join"
+DFd2G6NM"pthread_once"
+DFd3G6NM"pthread_self"
+DFd4G6NM"pthread_equal"
+DFd5G6NM"pthread_detach"
+DFd6G6NM"pthread_key_create"
+DFd7G6NM"pthread_key_delete"
+DFd8G6NM"pthread_getspecific"
+DFd9G6NM"pthread_setspecific"
+DFdaG6NM"pthread_cancel"
+DFdbG6NM"pthread_setcancelstate"
+DFdcG6NM"pthread_testcancel"
+DFddG6NM"pthread_getschedparam"
+DFdeG6NM"pthread_setschedparam"
+DFdfG6NM"pthread_attr_init"
+DFe0G6NM"pthread_attr_destroy"
+DFe1G6NM"pthread_attr_setdetachstate"
+DFe2G6NM"pthread_attr_getdetachstate"
+DFe3G6NM"pthread_attr_getstacksize"
+DFe4G6NM"pthread_attr_setstacksize"
+DFe5G6NM"pthread_attr_getschedparam"
+DFe6G6NM"pthread_attr_setschedparam"
+DFe7G6NM"pthread_attr_getschedpolicy"
+DFe8G6NM"pthread_attr_setschedpolicy"
+DFe9G6NM"pthread_attr_setinheritsched"
+DFeaG6NM"pthread_attr_getinheritsched"
+DFebG6NM"pthread_attr_setscope"
+DFecG6NM"pthread_attr_getscope"
+DFedG6NM"pthread_mutex_init"
+DFeeG6NM"pthread_mutex_destroy"
+DFefG6NM"pthread_mutex_lock"
+DFf0G6NM"pthread_mutex_unlock"
+DFf1G6NM"pthread_mutex_trylock"
+DFf2G6NM"pthread_mutexattr_init"
+DFf3G6NM"pthread_mutexattr_destroy"
+DFf4G6NM"pthread_mutexattr_getpshared"
+DFf5G6NM"pthread_mutexattr_setpshared"
+DFf6G6NM"pthread_cond_init"
+DFf7G6NM"pthread_cond_destroy"
+DFf8G6NM"pthread_cond_signal"
+DFf9G6NM"pthread_cond_broadcast"
+DFfaG6NM"pthread_cond_wait"
+DFfbG6NM"pthread_cond_timedwait"
+DFfcG6NM"pthread_condattr_init"
+DFfdG6NM"pthread_condattr_destroy"
+DFfeG6NM"pthread_condattr_getpshared"
+DFffG6NM"pthread_condattr_setpshared"
+DF100G1NM"MAIN__"
+DF101G7NM"init_modules_"
+DF102G7NM"module_driver_constants_mp_init_module_driver_constants_"
+DF103G7NM"module_model_constants_mp_init_module_model_constants_"
+DF104G7NM"module_domain_mp_init_module_domain_"
+DF105G8NM"module_ext_internal_mp_init_module_ext_internal_"
+DF106G7NM"module_nesting_mp_init_module_nesting_"
+DF107G7NM"module_timing_mp_init_module_timing_"
+DF108G7NM"module_tiles_mp_init_module_tiles_"
+DF109G7NM"module_io_wrf_mp_init_module_io_wrf_"
+DF10aG9NM"init_modules_em_"
+DF10bG7NM"module_domain_mp_alloc_and_configure_domain_"
+DF10cG7NM"module_domain_mp_wrf_patch_domain_"
+DF10dG7NM"module_domain_mp_find_grid_by_id_"
+DF10eG7NM"module_domain_mp_alloc_space_field_"
+DF10fG7NM"med_add_config_info_to_grid_"
+DF110G7NM"init_wrfio_"
+DF111G8NM"ext_ncd_ioinit_"
+DF112G8NM"ext_int_ioinit_"
+DF113G8NM"ext_yyy_ioinit_"
+DF114G7NM"setup_timekeeping_"
+DF115G7NM"esmf_timeintervalmod_mp_esmf_timeintervalset_"
+DF116G7NM"c_esmc_timeintervalset_"
+DF117G7NM"esmf_timemod_mp_esmf_timeset_"
+DF118G7NM"normalize_time_"
+DF119G7NM"nfeb_"
+DF11aG7NM"esmf_timemod_mp_esmf_timeinc_"
+DF11bG7NM"c_esmc_basetimesum_"
+DF11cG7NM"initdaym_"
+DF11dG7NM"compute_dayinyear_"
+DF11eG7NM"esmf_clockmod_mp_esmf_clockset_"
+DF11fG7NM"c_esmc_clockset_"
+DF120G7NM"esmf_clockmod_mp_esmf_clockgetalarmlist_"
+DF121G7NM"esmf_timeintervalmod_mp_esmf_timeintervalsum_"
+DF122G7NM"esmf_alarmmod_mp_esmf_alarmset_"
+DF123G7NM"c_esmc_alarmset_"
+DF124G7NM"esmf_clockmod_mp_esmf_clockaddalarm_"
+DF125G7NM"c_esmc_clockaddalarm_"
+DF126G7NM"esmf_timeintervalmod_mp_esmf_timeintervaleq_"
+DF127G7NM"c_esmc_basetimeeq_"
+DF128G7NM"timecmp_"
+DF129G7NM"esmf_alarmmod_mp_esmf_alarmturnon_"
+DF12aG7NM"c_esmc_alarmturnon_"
+DF12bG7NM"esmf_timeintervalmod_mp_esmf_timeintervalne_"
+DF12cG7NM"c_esmc_basetimene_"
+DF12dG7NM"esmf_alarmmod_mp_esmf_alarmenable_"
+DF12eG7NM"c_esmc_alarmenable_"
+DF12fG7NM"med_initialdata_input_"
+DF130G7NM"module_timing_mp_start_timing_"
+DF131G7NM"esmf_clockmod_mp_esmf_clockgetcurrtime_"
+DF132G7NM"c_esmc_clockgetcurrtime_"
+DF133G7NM"esmf_timemod_mp_esmf_timegetstring_"
+DF134G7NM"construct_filename2a_"
+DF135G7NM"zero_pad_"
+DF136G7NM"module_io_domain_mp_open_r_dataset_"
+DF137G8NM"ext_ncd_open_for_read_"
+DF138G7NM"module_io_domain_mp_input_model_input_"
+DF139G8NM"ext_ncd_open_for_read_begin_"
+DF13aG7NM"input_wrf_"
+DF13bG8NM"ext_ncd_support_routines_mp_allochandle_"
+DF13cG7NM"module_domain_mp_get_ijk_from_grid_"
+DF13dG8NM"ext_ncd_support_routines_mp_netcdf_err_"
+DF13eG7NM"atotime_"
+DF13fG8NM"ext_ncd_open_for_read_commit_"
+DF140G7NM"esmf_timemod_mp_esmf_timene_"
+DF141G8NM"ext_ncd_support_routines_mp_getdh_"
+DF142G7NM"wrf_inputin_"
+DF143G7NM"wrf_ext_read_field_"
+DF144G7NM"debug_io_wrf_"
+DF145G7NM"module_io_domain_mp_close_dataset_"
+DF146G8NM"ext_ncd_inquire_filename_"
+DF147G7NM"start_domain_"
+DF148G8NM"ext_ncd_get_dom_ti_integer_"
+DF149G9NM"start_domain_em_"
+DF14aG8NM"ext_ncd_get_dom_ti_real_"
+DF14bG7NM"module_tiles_mp_set_tiles3_"
+DF14cG8NM"ext_ncd_get_dom_ti_char_"
+DF14dG7NM"module_tiles_mp_set_tiles_masked_"
+DF14eG8NM"ext_ncd_get_next_time_"
+DF14fGaNM"module_physics_init_mp_phy_init_"
+DF150G7NM"esmf_timemod_mp_esmf_timegetdayofyearinteger_"
+DF151G7NM"c_esmc_timegetdayofyearinteger_"
+DF152G7NM"esmf_timemod_mp_esmf_timeget_"
+DF153GaNM"module_physics_init_mp_landuse_init_"
+DF154G8NM"ext_ncd_read_field_"
+DF155GaNM"module_physics_init_mp_z2sigma_"
+DF156G8NM"ext_ncd_support_routines_mp_getdim_"
+DF157GaNM"module_physics_init_mp_ra_init_"
+DF158G8NM"ext_ncd_support_routines_mp_lowercase_"
+DF159GaNM"module_physics_init_mp_bl_init_"
+DF15aG8NM"ext_ncd_support_routines_mp_datecheck_"
+DF15bGaNM"module_physics_init_mp_cu_init_"
+DF15cG8NM"ext_ncd_support_routines_mp_extorder_"
+DF15dGaNM"module_physics_init_mp_mp_init_"
+DF15eG8NM"ext_ncd_support_routines_mp_getindices_"
+DF15fG9NM"module_bc_em_mp_set_w_surface_"
+DF160G8NM"ext_ncd_support_routines_mp_fieldio_"
+DF161G7NM"module_integrate_mp_integrate_"
+DF162G8NM"ext_ncd_support_routines_mp_gettimeindex_"
+DF163G7NM"esmf_clockmod_mp_esmf_clockisstoptime_"
+DF164G8NM"ext_ncd_realfieldio_"
+DF165G7NM"c_esmc_clockisstoptime_"
+DF166G8NM"ext_ncd_support_routines_mp_transpose_"
+DF167G7NM"esmf_timemod_mp_esmf_timege_"
+DF168G8NM"ext_ncd_support_routines_mp_reorder_"
+DF169G7NM"c_esmc_basetimege_"
+DF16aG8NM"ext_ncd_intfieldio_"
+DF16bG7NM"esmf_timemod_mp_esmf_timelt_"
+DF16cG7NM"c_esmc_basetimelt_"
+DF16dG8NM"ext_ncd_ioclose_"
+DF16eG7NM"med_setup_step_"
+DF16fG7NM"module_nesting_mp_nests_to_open_"
+DF170G7NM"med_before_solve_io_"
+DF171G7NM"esmf_alarmmod_mp_esmf_alarmisringing_"
+DF172G7NM"c_esmc_alarmisringing_"
+DF173G7NM"med_history_out_"
+DF174G7NM"module_io_domain_mp_open_w_dataset_"
+DF175G7NM"module_io_domain_mp_output_history_"
+DF176G7NM"output_wrf_"
+DF177G7NM"wrf_histout_"
+DF178G7NM"wrf_ext_write_field_"
+DF179G7NM"esmf_alarmmod_mp_esmf_alarmturnoff_"
+DF17aG7NM"c_esmc_alarmturnoff_"
+DF17bG7NM"med_latbound_in_"
+DF17cG7NM"module_bc_time_utilities_mp_lbc_read_time_"
+DF17dG7NM"compute_lcd_"
+DF17eG7NM"construct_filename1_"
+DF17fG7NM"module_io_domain_mp_input_boundary_"
+DF180G7NM"wrf_bdyin_"
+DF181G7NM"esmf_timemod_mp_esmf_timeeq_"
+DF182G7NM"solve_interface_"
+DF183G9NM"solve_em_"
+DF184G7NM"module_tiles_mp_set_tiles2_"
+DF185GbNM"omp_destroy_lock"
+DF186GbNM"omp_destroy_nest_lock"
+DF187GbNM"omp_get_dynamic"
+DF188GbNM"omp_get_max_threads"
+DF189GbNM"omp_get_nested"
+DF18aGbNM"omp_get_num_procs"
+DF18bG8NM"ext_ncd_open_for_write_begin_"
+DF18cGbNM"omp_get_num_threads"
+DF18dGbNM"omp_get_thread_num"
+DF18eGbNM"omp_in_parallel"
+DF18fGbNM"omp_init_lock"
+DF190GbNM"omp_init_nest_lock"
+DF191G8NM"ext_ncd_write_field_"
+DF192GbNM"omp_set_dynamic"
+DF193G8NM"ext_ncd_support_routines_mp_extorderstr_"
+DF194GbNM"omp_set_lock"
+DF195G8NM"ext_ncd_support_routines_mp_uppercase_"
+DF196GbNM"omp_set_nest_lock"
+DF197G8NM"ext_ncd_put_var_ti_char_"
+DF198GbNM"omp_set_nested"
+DF199G8NM"ext_ncd_open_for_write_commit_"
+DF19aGbNM"omp_set_num_threads"
+DF19bG8NM"ext_ncd_put_dom_ti_char_"
+DF19cGbNM"omp_test_lock"
+DF19dG8NM"ext_ncd_put_dom_ti_integer_"
+DF19eGbNM"omp_test_nest_lock"
+DF19fG8NM"ext_ncd_put_dom_ti_real_"
+DF1a0GbNM"omp_unset_lock"
+DF1a1G8NM"ext_ncd_iosync_"
+DF1a2GbNM"omp_unset_nest_lock"
+DF1a3G7NM"module_timing_mp_end_timing_"
+DF1a4GbNM"!$omp do @interp_fcn.f:79"X1
+DF1a5GbNM"!$omp parallel @interp_fcn.f:79"X1
+DF1a6GcNM"!$omp ibarrier @interp_fcn.f:125"X2
+DF1a7G8NM"ext_ncd_get_dom_td_char_"
+DF1a8G8NM"ext_ncd_get_var_td_char_"
+DF1a9GbNM"!$omp do @interp_fcn.f:766"X3
+DF1aaG8NM"ext_ncd_support_routines_mp_getname_"
+DF1abGbNM"!$omp parallel @interp_fcn.f:766"X3
+DF1acGcNM"!$omp ibarrier @interp_fcn.f:880"X4
+DF1adGbNM"!$omp do @module_pbl_driver.f:305"X5
+DF1aeGbNM"!$omp parallel @module_pbl_driver.f:305"X5
+DF1afGcNM"!$omp ibarrier @module_pbl_driver.f:344"X6
+DF1b0GbNM"!$omp do @module_pbl_driver.f:346"X7
+DF1b1GbNM"!$omp parallel @module_pbl_driver.f:346"X7
+DF1b2GcNM"!$omp ibarrier @module_pbl_driver.f:408"X8
+DF1b3GbNM"!$omp do @module_cumulus_driver.f:270"X9
+DF1b4GbNM"!$omp parallel @module_cumulus_driver.f:270"X9
+DF1b5GcNM"!$omp ibarrier @module_cumulus_driver.f:355"Xa
+DF1b6GbNM"!$omp do @module_microphysics_driver.f:211"Xb
+DF1b7GbNM"!$omp parallel @module_microphysics_driver.f:211"Xb
+DF1b8GcNM"!$omp ibarrier @module_microphysics_driver.f:463"Xc
+DF1b9GbNM"!$omp do @module_radiation_driver.f:311"Xd
+DF1baGbNM"!$omp parallel @module_radiation_driver.f:311"Xd
+DF1bbGcNM"!$omp ibarrier @module_radiation_driver.f:508"Xe
+DF1bcGbNM"!$omp do @module_surface_driver.f:350"Xf
+DF1bdGbNM"!$omp parallel @module_surface_driver.f:350"Xf
+DF1beGcNM"!$omp ibarrier @module_surface_driver.f:359"X10
+DF1bfGbNM"!$omp do @module_surface_driver.f:377"X11
+DF1c0GbNM"!$omp parallel @module_surface_driver.f:377"X11
+DF1c1GcNM"!$omp ibarrier @module_surface_driver.f:395"X12
+DF1c2GbNM"!$omp do @module_surface_driver.f:397"X13
+DF1c3GbNM"!$omp parallel @module_surface_driver.f:397"X13
+DF1c4GcNM"!$omp ibarrier @module_surface_driver.f:439"X14
+DF1c5GbNM"!$omp do @module_surface_driver.f:442"X15
+DF1c6GbNM"!$omp parallel @module_surface_driver.f:442"X15
+DF1c7GcNM"!$omp ibarrier @module_surface_driver.f:547"X16
+DF1c8GbNM"!$omp do @module_surface_driver.f:554"X17
+DF1c9GbNM"!$omp parallel @module_surface_driver.f:554"X17
+DF1caGcNM"!$omp ibarrier @module_surface_driver.f:563"X18
+DF1cbGbNM"!$omp do @solve_em.f:1248"X19
+DF1ccGbNM"!$omp parallel @solve_em.f:1248"X19
+DF1cdGcNM"!$omp ibarrier @solve_em.f:1269"X1a
+DF1ceGbNM"!$omp do @solve_em.f:1555"X1b
+DF1cfGbNM"!$omp parallel @solve_em.f:1555"X1b
+DF1d0GcNM"!$omp ibarrier @solve_em.f:1580"X1c
+DF1d1GbNM"!$omp do @solve_em.f:1589"X1d
+DF1d2GbNM"!$omp parallel @solve_em.f:1589"X1d
+DF1d3GcNM"!$omp ibarrier @solve_em.f:1606"X1e
+DF1d4GbNM"!$omp do @solve_em.f:1691"X1f
+DF1d5GbNM"!$omp parallel @solve_em.f:1691"X1f
+DF1d6GcNM"!$omp ibarrier @solve_em.f:1715"X20
+DF1d7GbNM"!$omp do @solve_em.f:1836"X21
+DF1d8GbNM"!$omp parallel @solve_em.f:1836"X21
+DF1d9GcNM"!$omp ibarrier @solve_em.f:1855"X22
+DF1daGbNM"!$omp do @solve_em.f:1863"X23
+DF1dbGbNM"!$omp parallel @solve_em.f:1863"X23
+DF1dcGcNM"!$omp ibarrier @solve_em.f:1877"X24
+DF1ddGbNM"!$omp do @solve_em.f:2092"X25
+DF1deGbNM"!$omp parallel @solve_em.f:2092"X25
+DF1dfGcNM"!$omp ibarrier @solve_em.f:2110"X26
+DF1e0GbNM"!$omp do @solve_em.f:2283"X27
+DF1e1GbNM"!$omp parallel @solve_em.f:2283"X27
+DF1e2GcNM"!$omp ibarrier @solve_em.f:2305"X28
+DF1e3GbNM"!$omp do @solve_em.f:2581"X29
+DF1e4GbNM"!$omp parallel @solve_em.f:2581"X29
+DF1e5GcNM"!$omp ibarrier @solve_em.f:2599"X2a
+DF1e6GbNM"!$omp do @solve_em.f:3118"X2b
+DF1e7GbNM"!$omp parallel @solve_em.f:3118"X2b
+DF1e8GcNM"!$omp ibarrier @solve_em.f:3136"X2c
+DF1e9GbNM"!$omp do @solve_em.f:3142"X2d
+DF1eaGbNM"!$omp parallel @solve_em.f:3142"X2d
+DF1ebGcNM"!$omp ibarrier @solve_em.f:3161"X2e
+DF1ecGbNM"!$omp do @solve_em.f:3174"X2f
+DF1edGbNM"!$omp parallel @solve_em.f:3174"X2f
+DF1eeGcNM"!$omp ibarrier @solve_em.f:3196"X30
+DF1efGbNM"!$omp do @solve_em.f:3202"X31
+DF1f0GbNM"!$omp parallel @solve_em.f:3202"X31
+DF1f1GcNM"!$omp ibarrier @solve_em.f:3226"X32
+DF1f2GbNM"!$omp do @solve_em.f:3234"X33
+DF1f3GbNM"!$omp parallel @solve_em.f:3234"X33
+DF1f4GcNM"!$omp ibarrier @solve_em.f:3262"X34
+DF1f5GbNM"!$omp do @solve_em.f:3266"X35
+DF1f6GbNM"!$omp parallel @solve_em.f:3266"X35
+DF1f7GcNM"!$omp ibarrier @solve_em.f:3324"X36
+DF1f8GbNM"!$omp do @solve_em.f:3352"X37
+DF1f9GbNM"!$omp parallel @solve_em.f:3352"X37
+DF1faGcNM"!$omp ibarrier @solve_em.f:3405"X38
+DF1fbGbNM"!$omp do @solve_em.f:3726"X39
+DF1fcGbNM"!$omp parallel @solve_em.f:3726"X39
+DF1fdGcNM"!$omp ibarrier @solve_em.f:3809"X3a
+DF1feGbNM"!$omp do @solve_em.f:3819"X3b
+DF1ffGbNM"!$omp parallel @solve_em.f:3819"X3b
+DF200GcNM"!$omp ibarrier @solve_em.f:3867"X3c
+DF201GbNM"!$omp do @solve_em.f:3944"X3d
+DF202GbNM"!$omp parallel @solve_em.f:3944"X3d
+DF203GcNM"!$omp ibarrier @solve_em.f:4098"X3e
+DF204GbNM"!$omp do @solve_em.f:4264"X3f
+DF205GbNM"!$omp parallel @solve_em.f:4264"X3f
+DF206GcNM"!$omp ibarrier @solve_em.f:4317"X40
+DF207GbNM"!$omp do @solve_em.f:4322"X41
+DF208GbNM"!$omp parallel @solve_em.f:4322"X41
+DF209GcNM"!$omp ibarrier @solve_em.f:4358"X42
+DF20aGbNM"!$omp do @solve_em.f:4452"X43
+DF20bGbNM"!$omp parallel @solve_em.f:4452"X43
+DF20cGcNM"!$omp ibarrier @solve_em.f:4651"X44
+DF20dGbNM"!$omp do @solve_em.f:4653"X45
+DF20eGbNM"!$omp parallel @solve_em.f:4653"X45
+DF20fGcNM"!$omp ibarrier @solve_em.f:4693"X46
+DF210GbNM"!$omp do @solve_em.f:4797"X47
+DF211GbNM"!$omp parallel @solve_em.f:4797"X47
+DF212GcNM"!$omp ibarrier @solve_em.f:4823"X48
+DF213GbNM"!$omp do @solve_em.f:4825"X49
+DF214GbNM"!$omp parallel @solve_em.f:4825"X49
+DF215GcNM"!$omp ibarrier @solve_em.f:4866"X4a
+DF216GbNM"!$omp do @solve_em.f:4877"X4b
+DF217GbNM"!$omp parallel @solve_em.f:4877"X4b
+DF218GcNM"!$omp ibarrier @solve_em.f:4903"X4c
+DF219GbNM"!$omp do @solve_em.f:4906"X4d
+DF21aGbNM"!$omp parallel @solve_em.f:4906"X4d
+DF21bGcNM"!$omp ibarrier @solve_em.f:4941"X4e
+DF21cGbNM"!$omp do @solve_em.f:4949"X4f
+DF21dGbNM"!$omp parallel @solve_em.f:4949"X4f
+DF21eGcNM"!$omp ibarrier @solve_em.f:4980"X50
+DF21fGbNM"!$omp do @solve_em.f:5601"X51
+DF220GbNM"!$omp parallel @solve_em.f:5601"X51
+DF221GcNM"!$omp ibarrier @solve_em.f:5661"X52
+DF222GbNM"!$omp do @solve_em.f:6436"X53
+DF223GbNM"!$omp parallel @solve_em.f:6436"X53
+DF224GcNM"!$omp ibarrier @solve_em.f:6454"X54
+DF225GbNM"!$omp do @solve_em.f:6478"X55
+DF226GbNM"!$omp parallel @solve_em.f:6478"X55
+DF227GcNM"!$omp ibarrier @solve_em.f:6502"X56
+DF228GbNM"!$omp do @solve_em.f:6525"X57
+DF229GbNM"!$omp parallel @solve_em.f:6525"X57
+DF22aGcNM"!$omp ibarrier @solve_em.f:6563"X58
+DF22bGbNM"!$omp do @solve_em.f:6585"X59
+DF22cGbNM"!$omp parallel @solve_em.f:6585"X59
+DF22dGcNM"!$omp ibarrier @solve_em.f:6606"X5a
+DF22eGbNM"!$omp do @solve_em.f:7771"X5b
+DF22fGbNM"!$omp parallel @solve_em.f:7771"X5b
+DF230GcNM"!$omp ibarrier @solve_em.f:7844"X5c
+DF231GbNM"!$omp do @couple_or_uncouple_em.f:1167"X5d
+DF232GbNM"!$omp parallel @couple_or_uncouple_em.f:1167"X5d
+DF233GcNM"!$omp ibarrier @couple_or_uncouple_em.f:1213"X5e
+DF234GbNM"!$omp do @couple_or_uncouple_em.f:1215"X5f
+DF235GbNM"!$omp parallel @couple_or_uncouple_em.f:1215"X5f
+DF236GcNM"!$omp ibarrier @couple_or_uncouple_em.f:1224"X60
+DF237G9NM"module_em_mp_rk_step_prep_"
+DF238G9NM"module_bc_em_mp_rk_phys_bc_dry_1_"
+DF239G9NM"module_em_mp_init_zero_tendency_"
+DF23aGaNM"module_radiation_driver_mp_radiation_driver_"
+DF23bGaNM"module_radiation_driver_mp_radconst_"
+DF23cGaNM"module_radiation_driver_mp_cal_cldfra_"
+DF23dGaNM"module_surface_driver_mp_surface_driver_"
+DF23eGaNM"module_sf_sfcdiags_mp_sfcdiags_"
+DF23fGaNM"module_pbl_driver_mp_pbl_driver_"
+DF240GaNM"module_cumulus_driver_mp_cumulus_driver_"
+DF241G9NM"module_em_mp_calculate_phy_tend_"
+DF242G9NM"module_diffusion_em_mp_phy_bc_"
+DF243GaNM"module_physics_addtendc_mp_update_phy_ten_"
+DF244GaNM"module_physics_addtendc_mp_phy_ra_ten_"
+DF245GaNM"module_physics_addtendc_mp_add_a2a_"
+DF246GaNM"module_physics_addtendc_mp_phy_bl_ten_"
+DF247GaNM"module_physics_addtendc_mp_add_a2c_u_"
+DF248GaNM"module_physics_addtendc_mp_add_a2c_v_"
+DF249GaNM"module_physics_addtendc_mp_phy_cu_ten_"
+DF24aG9NM"module_em_mp_rk_tendency_"
+DF24bG9NM"module_advect_em_mp_advect_u_"
+DF24cG9NM"module_advect_em_mp_advect_v_"
+DF24dG9NM"module_advect_em_mp_advect_w_"
+DF24eG9NM"module_advect_em_mp_advect_scalar_"
+DF24fG9NM"module_bc_em_mp_relax_bdy_dry_"
+DF250G9NM"module_em_mp_rk_addtend_dry_"
+DF251G9NM"module_bc_em_mp_spec_bdy_dry_"
+DF252G9NM"module_small_step_em_mp_small_step_prep_"
+DF253G9NM"module_small_step_em_mp_calc_p_rho_"
+DF254G9NM"module_small_step_em_mp_calc_coef_w_"
+DF255G9NM"module_small_step_em_mp_advance_uv_"
+DF256G9NM"module_small_step_em_mp_advance_mu_t_"
+DF257G9NM"module_small_step_em_mp_sumflux_"
+DF258G9NM"module_small_step_em_mp_advance_w_"
+DF259G9NM"module_bc_em_mp_spec_bdyupdate_ph_"
+DF25aG9NM"module_small_step_em_mp_small_step_finish_"
+DF25bG9NM"module_em_mp_rk_scalar_tend_"
+DF25cG9NM"module_bc_em_mp_relax_bdy_scalar_"
+DF25dG9NM"module_bc_em_mp_spec_bdy_scalar_"
+DF25eG9NM"module_em_mp_rk_update_scalar_"
+DF25fG9NM"module_bc_em_mp_rk_phys_bc_dry_2_"
+DF260GaNM"module_physics_addtendc_mp_advance_ppt_"
+DF261GaNM"module_microphysics_driver_mp_microphysics_driver_"
+DF262G9NM"module_bc_em_mp_set_phys_bc_dry_2_"
+DF263G7NM"esmf_clockmod_mp_esmf_clockadvance_"
+DF264G7NM"c_esmc_clockadvance_"
+DF265G7NM"esmf_timemod_mp_esmf_timegt_"
+DF266G7NM"c_esmc_basetimegt_"
+DF267G7NM"esmf_timemod_mp_esmf_timele_"
+DF268G7NM"c_esmc_basetimele_"
+DF269G7NM"med_calc_model_time_"
+DF26aG7NM"med_after_solve_io_"
+DF26bG7NM"med_last_solve_io_"
+DF26cG7NM"med_shutdown_io_"
+DF26dG8NM"ext_ncd_ioexit_"
+DF26eG8NM"ext_int_ioexit_"
+DF26fG8NM"ext_yyy_ioexit_"
+DCO1NM"MPI_Allgather"Y4
+DCO2NM"MPI_Allgatherv"Y4
+DCO3NM"MPI_Allreduce"Y4
+DCO4NM"MPI_Alltoall"Y4
+DCO5NM"MPI_Alltoallv"Y4
+DCO6NM"MPI_Barrier"Y1
+DCO7NM"MPI_Bcast"Y2
+DCO8NM"MPI_Gather"Y3
+DCO9NM"MPI_Gatherv"Y3
+DCOaNM"MPI_Reduce"Y3
+DCObNM"MPI_Reduce_scatter"Y4
+DCOcNM"MPI_Scan"Y0
+DCOdNM"MPI_Scatter"Y2
+DCOeNM"MPI_Scatterv"Y2
+DCG1NM"Resources"
+DCG2NM"PAPI"
+DCNT1G2NM"PAPI_FP_OPS"P0U"#"
+DCNT2G2NM"PAPI_L3_TCM"P0U"#"
+DCNT3G1NM"ru_utime"P0U"us"
+DCNT4G1NM"ru_stime"P0U"us"

@@ -1,0 +1,72 @@
+\begin{tikzpicture}[scale=0.33, every node/.style={scale=0.33}]
+
+% top level
+\node [draw, ellipse, align=center] (min) {
+	min \\ function pairs (452) :  293 $\rightarrow$ 41, 255 $\rightarrow$ 255, \ldots};
+
+% next level
+\node [draw, ellipse, below left=0.4cm  of min] (blmin) {
+	function pairs (2) : 249 $\rightarrow$ 113, 249 $\rightarrow$ 132};
+\node [draw, ellipse, below right=0.4cm of min] (brmin) {
+	function pairs (1) : 246 $\rightarrow$ 95};
+
+\path [draw, -latex'] (min) edge (blmin);
+\path [draw, -latex'] (min) edge (brmin);
+
+% next level
+\node [draw, ellipse, below=0.4cm of blmin             ] (blbmin) {
+	function pairs (1) : 246 $\rightarrow$ 244};
+\node [draw, ellipse, left=0.4cm  of blbmin            ] (blblmin) {
+	function pairs (1) : 247 $\rightarrow$ 251};
+\node [draw, circle , right=0.4cm of blbmin, text=white] (blbrmin) {0};
+
+\path [draw, -latex'] (blmin) edge (blbmin);
+\path [draw, -latex'] (blmin) edge (blblmin);
+\path [draw, -latex'] (blmin) edge (blbrmin);
+\path [draw, -latex'] (brmin) edge (blbrmin);
+
+% next level
+\node [draw, ellipse, below=0.4cm of blbmin ] (blbbmin) {
+	processes(17) : 171, 211, 219, 228, 229, 231, \ldots};
+\node [draw, ellipse, left=0.4cm  of blbbmin] (blbblmin) {
+	processes(1) : 512};
+\node [draw, ellipse, right=0.4cm of blbbmin] (blbbrmin) {
+	processes(44) : 8, 10, 12, 43, 52, 57, 62, \ldots};
+
+\path [draw, -latex'] (blblmin) edge (blbblmin);
+\path [draw, -latex'] (blblmin) edge (blbbmin);
+\path [draw, -latex'] (blbmin)  edge (blbblmin);
+\path [draw, -latex'] (blbmin)  edge (blbbmin);
+\path [draw, -latex'] (blbrmin) edge (blbbmin);
+\path [draw, -latex'] (blbrmin) edge (blbbrmin);
+
+% next level
+\node [draw, ellipse, below left=0.4cm  of blbbrmin] (blbbrblmin) {
+	processes (442) : 2, 3, 4, 5, 6, 7, 9, 11, 13, \ldots};
+\node [draw, ellipse, below right=0.4cm of blbbrmin] (blbbrbrmin) {
+	function pairs (4) : 330 $\rightarrow$ 85, 324 $\rightarrow$ 85, \ldots};
+
+\path [draw, -latex'] (blbblmin) edge (blbbrblmin);
+\path [draw, -latex'] (blbbmin)  edge (blbbrblmin);
+\path [draw, -latex'] (blbbrmin) edge (blbbrblmin);
+\path [draw, -latex'] (brmin)    edge (blbbrbrmin);
+
+% next level
+\node [draw, ellipse, align=center, below=0.4cm of blbbrblmin] (blbbrblbmin) {
+	processes (7) : 55, 167, 194, 237, 245, 478, \ldots \\
+	function pairs (13) : 330 $\rightarrow$ 232, 324 $\rightarrow$ 83, \ldots};
+\node [draw, ellipse, align=center, below=0.4cm of blbbrbrmin] (blbbrbrbmin) {
+	processes (1) : 1 \\
+	function pairs (8) : 331 $\rightarrow$ 41, 249 $\rightarrow$ 331, \ldots};
+
+\path [draw, -latex'] (blbbrblmin) edge (blbbrblbmin);
+\path [draw, -latex'] (blbbrbrmin) edge (blbbrblbmin);
+\path [draw, -latex'] (blbbrbrmin) edge (blbbrbrbmin);
+
+% next level
+\node [draw, ellipse, align=center, below right=0.4cm of blbbrblbmin] (max) {max};
+
+\path [draw, -latex'] (blbbrblbmin) edge (max);
+\path [draw, -latex'] (blbbrbrbmin) edge (max);
+
+\end{tikzpicture}

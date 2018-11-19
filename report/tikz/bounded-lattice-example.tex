@@ -1,0 +1,25 @@
+\begin{tikzpicture}[]
+
+\node [draw, ellipse                                          ] (abc) {$\{A, B, C\}$};
+\node [draw, ellipse, below of=abc             , yshift=-0.2cm] (ac)  {$\{A, C\}$};
+\node [draw, ellipse, left  of=ac , anchor=east, xshift=-0.3cm] (ab)  {$\{A, B\}$};
+\node [draw, ellipse, right of=ac , anchor=west, xshift=0.3cm ] (bc)  {$\{B, C\}$};
+\node [draw, ellipse, below of=ac              , yshift=-0.2cm] (b)   {$\{B\}$};
+\node [draw, ellipse, below of=ab              , yshift=-0.2cm] (a)   {$\{A\}$};
+\node [draw, ellipse, below of=bc              , yshift=-0.2cm] (c)   {$\{C\}$};
+\node [draw, circle , below of=b               , yshift=-0.2cm] (0)   {$\emptyset$};
+
+\path [draw, -latex'] (abc) edge (ab);
+\path [draw, -latex'] (abc) edge (bc);
+\path [draw, -latex'] (abc) edge (ac);
+\path [draw, -latex'] (ab)  edge (a);
+\path [draw, -latex'] (ab)  edge (b);
+\path [draw, -latex'] (bc)  edge (b);
+\path [draw, -latex'] (bc)  edge (c);
+\path [draw, -latex'] (ac)  edge (a);
+\path [draw, -latex'] (ac)  edge (c);
+\path [draw, -latex'] (a)   edge (0);
+\path [draw, -latex'] (b)   edge (0);
+\path [draw, -latex'] (c)   edge (0);
+
+\end{tikzpicture}

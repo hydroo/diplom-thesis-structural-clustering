@@ -1,0 +1,25 @@
+\begin{tikzpicture}[]
+
+\node [draw     , circle                                                ] (6) {6};
+
+\node [draw     , circle, below right of=a, xshift=0.2cm , yshift=-0.2cm] (3) {3};
+\node [draw     , circle, below left  of=6, xshift=-0.2cm, yshift=-0.2cm] (2) {2};
+\node [draw     , circle, below right of=2, xshift=0.2cm , yshift=-0.2cm] (1) {1};
+
+\node [draw=none, circle, above left  of=2, xshift=-0.2cm, yshift=0.2cm ] (a) {\rotatebox{135}{...}};
+\node [draw=none, circle,       left  of=2                              ] (b) {...};
+\node [draw=none, circle, above left  of=6, xshift=-0.2cm, yshift=0.2cm ] (c) {\rotatebox{135}{...}};
+\node [draw=none, circle, above right of=6, xshift=0.2cm , yshift=0.2cm ] (d) {\rotatebox{45}{...}};
+\node [draw=none, circle, above right of=3, xshift=0.2cm , yshift=0.2cm ] (e) {\rotatebox{45}{...}};
+\node [draw=none, circle,       right of=3                              ] (f) {...};
+
+\path [draw, -latex'] (a) edge (2);
+\path [draw, -latex'] (c) edge (6);
+\path [draw, -latex'] (d) edge (6);
+\path [draw, -latex'] (e) edge (3);
+\path [draw, -latex'] (6) edge (3);
+\path [draw, -latex'] (6) edge (2);
+\path [draw, -latex'] (3) edge (1);
+\path [draw, -latex'] (2) edge (1);
+
+\end{tikzpicture}

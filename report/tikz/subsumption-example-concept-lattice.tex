@@ -1,0 +1,16 @@
+\begin{tikzpicture}[]
+
+% this picture is sadly about 13.5cm. I would want to have 13cm maximum.
+
+\node [draw     , circle                            , text=white             ] (0) {0};
+\node [draw=none         , below of=0, yshift=-0.2cm                         ] (x) {};
+\node [draw     , ellipse, left  of=x, xshift=0.95cm            , anchor=east] (a) {$\{\texttt{process 1}\}, \{ 0 \rightarrow A, A \rightarrow B \}$};
+\node [draw     , ellipse, right of=x, xshift=-0.95cm           , anchor=west] (b) {$\{\texttt{process 2}\}, \{ 0 \rightarrow B \}$};
+\node [draw     , circle , below of=x, yshift=-0.2cm, text=white             ] (1) {0};
+
+\path [draw, -latex'] (0) edge (a);
+\path [draw, -latex'] (0) edge (b);
+\path [draw, -latex'] (a) edge (1);
+\path [draw, -latex'] (b) edge (1);
+
+\end{tikzpicture}

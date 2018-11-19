@@ -1,0 +1,9 @@
+\begin{tikzpicture}[]
+
+\node [draw, ellipse                           ] (0) {$\{\texttt{process 2}\}, \{ 0 \rightarrow B \}$};
+\node [draw, ellipse, below of=0, yshift=-0.5cm] (1) {$\{\texttt{process 1}\}, \{ 0 \rightarrow A, A \rightarrow B\}$};
+
+\path [draw, -latex'] (0) edge (1);
+
+\end{tikzpicture}
+

@@ -1,0 +1,53 @@
+\begin{tikzpicture}[]
+
+% latex tikz (without pgfplots) can only handle values up to 16384. we therefore divide all y values by 1000 and add the missing zeros later on
+% the proper way would be to use pgfplots
+
+\def \xw{10cm}
+% \def \xw{4.8cm} % defense slides
+\def \xh{6cm}
+% \def \xh{3.0cm} % defense slides
+% \def \xh{2.5cm} % defense slides
+
+\def \xxmax{11.5}
+\def \xymax{66}
+
+\newcommand{\xx}[1]{#1 / \xxmax * \xw}
+\newcommand{\xy}[1]{#1 / \xymax * \xh}
+
+\foreach \x in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11} {
+% \foreach \x in {1, 3, 5, 7, 9, 11} { % defense slides
+	\draw [lightgray2, thin] (\xx{\x}, 0pt) -- (\xx{\x}, \xy{\xymax}); % x help line
+	\draw (\xx{\x}, 0pt) -- (\xx{\x}, -3pt) node[anchor=north] {\rotatebox{45}{\pgfmathparse{2^(\x+1)}\pgfmathprintnumber{\pgfmathresult}}}; % x label
+	% \foreach \xa in {0.125, 0.25, 0.5} { % small log lines
+	% 	\pgfmathsetmacro{\xb}{\x - \xa}%
+	% 	\draw (\xx{\xb}, 0pt) -- (\xx{\xb}, -2pt);
+	% }
+}
+
+\foreach \y in {10, 20, 30, 40, 50, 60} {
+% \foreach \y in {20, 40, 60} { % defense slides
+	\draw[lightgray2, thin] (0pt, \xy{\y}) -- (\xx{\xxmax}, \xy{\y}); % y help line
+	\draw (0pt, \xy{\y}) -- (-3pt, \xy{\y}) node[anchor=east] {\y,000}; % y label
+}
+
+\draw[->] (0,0) -- coordinate (x axis mid) (\xw, 0); % x axis
+\draw[->] (0,0) -- coordinate (y axis mid) (0  , \xh); % y axis
+
+\node[below=1.1cm] at (x axis mid) {Processes};
+\node[left=1.5cm]  at (y axis mid) {\rotatebox{90}{Nodes}};
+
+\draw plot[only marks, mark=*] coordinates {
+	(\xx{ 1}, \xy{ 0.010})
+	(\xx{ 2}, \xy{ 0.026})
+	(\xx{ 3}, \xy{ 0.199})
+	(\xx{ 4}, \xy{ 1.716})
+	(\xx{ 5}, \xy{ 3.168})
+	(\xx{ 6}, \xy{ 6.367})
+	(\xx{ 7}, \xy{ 7.327})
+	(\xx{ 8}, \xy{ 7.297})
+	(\xx{ 9}, \xy{57.814})
+	(\xx{10}, \xy{31.198})
+	(\xx{11}, \xy{57.452})};
+
+\end{tikzpicture}

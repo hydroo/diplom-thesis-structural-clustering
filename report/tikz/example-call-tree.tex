@@ -1,0 +1,37 @@
+\begin{tikzpicture}[]
+
+\node [draw     , rectangle                                         ] (p1) {\texttt{process 1}};
+\node [draw     , ellipse  , below of=p1             , yshift=-0.2cm] (11) {\texttt{main}};
+\node [draw     , ellipse  , below of=11             , yshift=-0.2cm] (21) {\texttt{fopen}};
+\node [draw     , ellipse  , left  of=21, anchor=east               ] (31) {\texttt{MPI\_Init}};
+\node [draw     , ellipse  , right of=21, anchor=west               ] (41) {\texttt{fclose}};
+\node [draw=none           , below of=31             , yshift=-0.2cm] (51) {};
+\node [draw     , ellipse  , left  of=51                            ] (61) {\texttt{fopen}};
+\node [draw     , ellipse  , right of=51                            ] (71) {\texttt{fclose}};
+
+\path [draw, -latex'] (p1) edge (11);
+
+\path [draw, -latex'] (11) edge (21);
+\path [draw, -latex'] (11) edge (31);
+\path [draw, -latex'] (11) edge (41);
+
+\path [draw, -latex'] (31) edge (61);
+\path [draw, -latex'] (31) edge (71);
+
+
+
+\node [draw     , rectangle, right of=p1, xshift=4cm   ] (p2) {\texttt{process 2}};
+\node [draw     , ellipse  , below of=p2, yshift=-0.2cm] (12) {\texttt{main}};
+\node [draw     , ellipse  , below of=12, yshift=-0.2cm] (32) {\texttt{MPI\_Init}};
+\node [draw=none           , below of=32, yshift=-0.2cm] (52) {};
+\node [draw     , ellipse  , left  of=52               ] (62) {\texttt{fopen}};
+\node [draw     , ellipse  , right of=52               ] (72) {\texttt{fclose}};
+
+\path [draw, -latex'] (p2) edge (12);
+
+\path [draw, -latex'] (12) edge (32);
+\path [draw, -latex'] (32) edge (62);
+\path [draw, -latex'] (32) edge (72);
+
+
+\end{tikzpicture}

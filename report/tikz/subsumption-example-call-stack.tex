@@ -1,0 +1,16 @@
+\begin{tikzpicture}[]
+
+\node [draw     , rectangle                                        ] (p1) {\texttt{process 1}};
+\node [draw     , ellipse  , below of=p1, yshift=-0.2cm            ] (a1) {$A$};
+\node [draw     , ellipse  , below of=a1, yshift=-0.2cm            ] (b1) {$B$};
+
+\path [draw     , -latex'] (p1) edge (a1);
+\path [draw     , -latex'] (a1) edge (b1);
+
+\node [draw     , rectangle, right of=p1, xshift=2.0cm             ] (p2) {\texttt{process 2}};
+\node [draw=none, ellipse  , below of=p2, yshift=-0.2cm, text=white] (a1) {$0$};
+\node [draw     , ellipse  , below of=a2, yshift=-0.2cm            ] (b2) {$B$};
+
+\path [draw     , -latex'] (p2) edge (b2);
+
+\end{tikzpicture}

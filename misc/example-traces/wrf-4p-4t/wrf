@@ -1,0 +1,19 @@
+call-matrix [options] <tracefilename> [processes-to-be-compared]
+
+	processes are space separated and can be singular or a range in the form of 1-5
+
+	options:
+		-p                          list processes
+		-f                          list functions
+		-%                          show loading progress
+
+		--console                   raw console output [default]
+		--vis                       gui visualization
+		--transitive-vis            gui visualization of the transitively closed matrix
+		--group <min-similarity>    prints a list of groups of similar processes. similarity ranges between 0.0 and 1.0
+		--simple-similarity         prints the compressed simple similarity matrix
+		--subsumption-similarity    prints the compressed subsumption similarity matrix
+		--compressed-dot            prints the compressed call matrix as graphviz dot format
+		--compressed-transitive-dot prints the compressed transitively closed call matrix as graphviz dot format
+		--compressed-cxt            prints the compressed call matrix in the cxt format
+		--compressed-transitive-dot prints the compressed transitively closed call matrix in the cxt format
